@@ -7,13 +7,16 @@
                     <span class="w-2 h-2 rotate-45 bg-cyan-400"></span>
                     <span>UTS Pemrograman Web 2026</span>
                 </div>
+                <p class="text-xs text-slate-300">
+                    Robby Ibrahimovic Wibowo
+                </p>
                 <p class="text-xs text-slate-400">
-                    Robby Ibrahimovic Wibowo &bull; NIM: <span class="text-cyan-400 font-mono">252410103020</span>
+                    NIM: <span class="text-cyan-400 font-mono">252410103020</span>
                 </p>
             </div>
             <div class="flex items-center gap-2">
                 <span class="px-3 py-1 bg-indigo-950/80 border border-indigo-700/60 text-cyan-300 text-xs rounded tracking-wide font-mono">
-                    ◈ Galaxy Architecture &bull; Laravel 11 Blade
+                    ◈ Made with Laravel 11 :]
                 </span>
             </div>
         </div>
