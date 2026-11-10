@@ -1,66 +1,115 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# UTS Pemrograman Web - Prompt Engineering Events Hub
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Proyek aplikasi web manajemen event teknologi berbasis **Laravel 11** murni tanpa database dan tanpa starter kit (Breeze/Jetstream), dikembangkan untuk memenuhi tugas Ujian Tengah Semester (UTS) mata kuliah Pemrograman Berbasis Web.
 
-## About Laravel
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Identitas Pengembang
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- **Nama Lengkap** : Robby Ibrahimovic Wibowo
+- **NIM** : 252410103020
+- **Mata Kuliah** : Pemrograman Berbasis Web
+- **Tahun Akademik** : 2026/2027
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+---
 
-## Learning Laravel
+## Gambaran Proyek
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+**Prompt Engineering Events Hub (P.E)** adalah platform informasi dan manajemen agenda workshop/webinar seputar ekosistem Artificial Intelligence dan teknik prompting modern. Aplikasi ini mengusung antarmuka bertema *Galaxy* dengan aksen geometris menggunakan Tailwind CSS.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+### Batasan & Ketentuan Teknis yang Dipenuhi:
+1. **1 Controller Utama**: Seluruh alur data dan pemanggilan view diatur secara terpusat melalui `app/Http/Controllers/PageController.php`.
+2. **Arsitektur Blade MVC**: Memiliki 9 file inti yang saling terintegrasi (`web.php`, `PageController.php`, layout `app.blade.php`, view `login`, `dashboard`, `profile`, `pengelolaan`, serta komponen `navbar` dan `footer`).
+3. **Blade Directives**: Mengimplementasikan `@extends`, `@section`, `@yield`, `@include`, serta komponen `<x-footer />`.
+4. **Alur Autentikasi Dummy (HTTP GET)**: Parameter `username` dikirim dari form login melalui method `GET` dan dipertahankan antar halaman (`dashboard`, `profile`, dan `pengelolaan`).
+5. **Rendering Data Array Dummy**: Menampilkan daftar event teknologi secara dinamis di `pengelolaan.blade.php` menggunakan perulangan `@foreach`, lengkap dengan thumbnail poster dan avatar pemateri via helper `asset()`.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+---
 
-## Laravel Sponsors
+## Struktur File Proyek
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+```text
+UTS_PWEB_252410103020/
+├── app/
+│   └── Http/
+│       └── Controllers/
+│           └── PageController.php          # 1 controller pengendali seluruh halaman & data dummy
+├── public/
+│   └── images/
+│       ├── acara/                          # poster kegiatan event
+│       └── pembicara/                      # foto profil pemateri
+├── resources/
+│   └── views/
+│       ├── components/
+│           ├── footer.blade.php            # komponen footer identitas mahasiswa (<x-footer />)
+│           └── navbar.blade.php            # komponen navigasi (@include)
+│       ├── layouts/
+│           └── app.blade.php               # master layout (@yield & master styling)
+│       ├── dashboard.blade.php             # halaman dashboard ucapan selamat datang
+│       ├── login.blade.php                 # form login dengan method GET
+│       ├── pengelolaan.blade.php           # tabel event dengan looping @foreach
+│       └── profile.blade.php               # ID Card peserta event
+└── routes/
+    └── web.php                             # pendefinisian 4 rute utama dengan route naming
+```
 
-### Premium Partners
+---
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+## Panduan Menjalankan Aplikasi Secara Lokal
 
-## Contributing
+1. **Clone Repository**:
+   ```bash
+   git clone https://github.com/RobbyIbrahim/UTS_PWEB_252410103020.git
+   cd UTS_PWEB_252410103020
+   ```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+2. **Instal Dependensi**:
+   ```bash
+   composer install
+   ```
 
-## Code of Conduct
+3. **Salin File Environment**:
+   ```bash
+   cp .env.example .env
+   php artisan key:generate
+   ```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+4. **Jalankan Development Server**:
+   ```bash
+   php artisan serve
+   ```
 
-## Security Vulnerabilities
+5. **Akses di Browser**:
+   Buka `http://127.0.0.1:8000` pada peramban web Anda.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+---
 
-## License
+## Dokumentasi Tampilan Aplikasi
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+### 1. Halaman Login
+![Halaman Login](<img width="1915" height="895" alt="image" src="https://github.com/user-attachments/assets/bf35ef0e-9ba8-4433-bbf8-29f7e4f90ce9" />
+)
+*Form login dengan validasi karakter huruf/angka dan pengiriman parameter GET.*
+
+### 2. Halaman Dashboard
+![Halaman Dashboard](<img width="1912" height="892" alt="image" src="https://github.com/user-attachments/assets/fa583dfa-5d14-49a5-8acf-2b5d4bebca12" />
+)
+*Tampilan dashboard menyambut sesi user aktif beserta ringkasan metrik event.*
+
+### 3. Halaman Pengelolaan Event
+![Halaman Pengelolaan Event](<img width="1892" height="890" alt="image" src="https://github.com/user-attachments/assets/e68e2b54-9277-45af-a53d-b51b01c6c4c5" />
+)
+*Tabel perulangan `@foreach` menampilkan data event, kuota, badge status, poster, dan foto pemateri.*
+
+### 4. Halaman Profile Peserta
+![Halaman Profile](<img width="1917" height="892" alt="image" src="https://github.com/user-attachments/assets/c6043758-3a1b-445e-a16f-07453ba121bc" />
+)
+*Kartu identitas peserta event dengan inisial avatar geometris dan data sesi aktif.*
+
+---
+
+## Demo Video YouTube
+
+- **Link Video UTS** : [Tonton Video Demo di YouTube](To Be Added)
+
+## Thank You :]
