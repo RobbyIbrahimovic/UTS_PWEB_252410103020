@@ -4,7 +4,7 @@
 
 @section('content')
 <div class="space-y-8">
-    {{-- Banner Utama Geometris --}}
+    {{-- banner sambutan dan nama user --}}
     <div class="p-6 sm:p-8 bg-slate-900/80 border border-slate-800 rounded-sm relative overflow-hidden shadow-xl backdrop-blur-sm">
         <div class="w-4 h-4 border-t-2 border-l-2 border-cyan-400 absolute top-0 left-0"></div>
         <div class="w-4 h-4 border-b-2 border-r-2 border-cyan-400 absolute bottom-0 right-0"></div>
@@ -34,7 +34,7 @@
         </div>
     </div>
 
-    {{-- Ringkasan Banner & Info Geometris --}}
+    {{-- ringkasan kartu info event --}}
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         <div class="p-5 bg-slate-900/60 border border-slate-800 rounded-sm relative group hover:border-cyan-500/40 transition">
             <div class="w-2.5 h-2.5 border-t-2 border-l-2 border-cyan-400 absolute top-0 left-0"></div>
@@ -59,4 +59,3 @@
     </div>
 </div>
 @endsection
-

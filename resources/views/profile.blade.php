@@ -4,12 +4,12 @@
 
 @section('content')
 <div class="max-w-2xl mx-auto py-4">
-    {{-- Card Profil Geometris --}}
+    {{-- card profil peserta --}}
     <div class="bg-slate-900/80 border border-slate-800 rounded-sm p-6 sm:p-8 relative shadow-2xl backdrop-blur-sm">
         <div class="w-3.5 h-3.5 border-t-2 border-l-2 border-cyan-400 absolute top-0 left-0"></div>
         <div class="w-3.5 h-3.5 border-b-2 border-r-2 border-cyan-400 absolute bottom-0 right-0"></div>
 
-        {{-- Header Card --}}
+        {{-- bagian atas profil ada avatar inisial nama --}}
         <div class="flex flex-col sm:flex-row items-center sm:items-start gap-5 pb-6 border-b border-slate-800 text-center sm:text-left">
             <div class="w-20 h-20 rotate-45 border-2 border-cyan-400 bg-cyan-950/40 flex items-center justify-center shrink-0 shadow-[0_0_15px_rgba(34,211,238,0.25)]">
                 <span class="-rotate-45 font-black text-2xl text-cyan-300 font-mono">
@@ -28,7 +28,7 @@
             </div>
         </div>
 
-        {{-- Detail Informasi --}}
+        {{-- rincian info akun --}}
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 py-6 text-sm">
             <div class="p-3.5 bg-slate-950/60 border border-slate-800/80 rounded-sm">
                 <div class="text-[11px] font-mono text-slate-400 uppercase">Nama Peserta</div>
@@ -51,7 +51,7 @@
             </div>
         </div>
 
-        {{-- Navigasi Tombol Aksi --}}
+        {{-- tombol aksi pindah halaman --}}
         <div class="pt-4 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-3">
             <a href="{{ route('dashboard', ['username' => $username]) }}" class="text-xs text-slate-400 hover:text-cyan-400 transition flex items-center gap-1.5">
                 &larr; Kembali ke Dashboard
@@ -69,4 +69,3 @@
     </div>
 </div>
 @endsection
-

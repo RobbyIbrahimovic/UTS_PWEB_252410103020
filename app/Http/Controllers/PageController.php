@@ -41,7 +41,9 @@ class PageController extends Controller
                 'pemateri' => 'Prof. Andrew Goldstein Silalahi',
                 'kategori' => 'Pemula',
                 'kuota' => 200,
-                'status' => 'Dibuka'
+                'status' => 'Dibuka',
+                'foto_acara' => 'images/acara/acara_BelajarDasarArtificialIntelligence.jpg',
+                'foto_pemateri' => 'images/pembicara/pembicara_AndrewGoldsteinSilalahi.jpg'
             ],
             [
                 'id' => 2,
@@ -49,15 +51,19 @@ class PageController extends Controller
                 'pemateri' => 'Prof. Dinar Atha Dwi Novelian',
                 'kategori' => 'Pemula',
                 'kuota' => 140,
-                'status' => 'Dibuka'
+                'status' => 'Dibuka',
+                'foto_acara' => 'images/acara/acara_BelajarEtikaDalamPrompting.jpg',
+                'foto_pemateri' => 'images/pembicara/pembicara_DinarAthaDwiNovelian.jpg'
             ],
             [
                 'id' => 3,
                 'nama_event' => 'Prompt Engineering Dalam Startup',
-                'pemateri' => 'Prof. Excelyno Magenta',
+                'pemateri' => 'Prof. Robby Ibrahimovic Wibowo',
                 'kategori' => 'Expert',
                 'kuota' => 50,
-                'status' => 'Penuh'
+                'status' => 'Penuh',
+                'foto_acara' => 'images/acara/acara_PromptEngineeringDalamStartup.jpg',
+                'foto_pemateri' => 'images/pembicara/pembicara_RobbyIbrahimovicWibowo.jpg'
             ],
             [
                 'id' => 4,
@@ -65,7 +71,9 @@ class PageController extends Controller
                 'pemateri' => 'Prof. Bima Tri Kunriawan',
                 'kategori' => 'Pemula',
                 'kuota' => 130,
-                'status' => 'Dibuka'
+                'status' => 'Dibuka',
+                'foto_acara' => 'images/acara/acara_MengenalLebihLuasTentangLLM.png',
+                'foto_pemateri' => 'images/pembicara/pembicara_BimaTriKurniawan.jpg'
             ],
         ];
 
