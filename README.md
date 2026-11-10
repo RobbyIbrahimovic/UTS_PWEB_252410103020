@@ -97,7 +97,7 @@ UTS_PWEB_252410103020/
 *Tampilan dashboard menyambut sesi user aktif beserta ringkasan metrik event.*
 
 ### 3. Halaman Pengelolaan Event
-![Pengelolaan]public/images/screenshots/halaman_pengelolaan_ss.png)
+![Pengelolaan](public/images/screenshots/halaman_pengelolaan_ss.png)
 
 *Tabel perulangan `@foreach` menampilkan data event, kuota, badge status, poster, dan foto pemateri.*
 
