@@ -1,10 +1,10 @@
-# UTS Pemrograman Web - Prompt Engineering Events Hub
+# 🌌 UTS Pemrograman Web - Prompt Engineering Events Hub
 
 Proyek aplikasi web manajemen event teknologi berbasis **Laravel 11** murni tanpa database dan tanpa starter kit (Breeze/Jetstream), dikembangkan untuk memenuhi tugas Ujian Tengah Semester (UTS) mata kuliah Pemrograman Berbasis Web.
 
 ---
 
-## Identitas Pengembang
+## 👤 Identitas Pengembang
 
 - **Nama Lengkap** : Robby Ibrahimovic Wibowo
 - **NIM** : 252410103020
@@ -13,11 +13,11 @@ Proyek aplikasi web manajemen event teknologi berbasis **Laravel 11** murni tanp
 
 ---
 
-## Gambaran Proyek
+## 🚀 Gambaran Proyek
 
 **Prompt Engineering Events Hub (P.E)** adalah platform informasi dan manajemen agenda workshop/webinar seputar ekosistem Artificial Intelligence dan teknik prompting modern. Aplikasi ini mengusung antarmuka bertema *Galaxy* dengan aksen geometris menggunakan Tailwind CSS.
 
-### Batasan & Ketentuan Teknis yang Dipenuhi:
+### ✦ Batasan & Ketentuan Teknis yang Dipenuhi:
 1. **1 Controller Utama**: Seluruh alur data dan pemanggilan view diatur secara terpusat melalui `app/Http/Controllers/PageController.php`.
 2. **Arsitektur Blade MVC**: Memiliki 9 file inti yang saling terintegrasi (`web.php`, `PageController.php`, layout `app.blade.php`, view `login`, `dashboard`, `profile`, `pengelolaan`, serta komponen `navbar` dan `footer`).
 3. **Blade Directives**: Mengimplementasikan `@extends`, `@section`, `@yield`, `@include`, serta komponen `<x-footer />`.
@@ -26,7 +26,7 @@ Proyek aplikasi web manajemen event teknologi berbasis **Laravel 11** murni tanp
 
 ---
 
-## Struktur File Proyek
+## 📂 Struktur File Proyek
 
 ```text
 UTS_PWEB_252410103020/
@@ -55,7 +55,7 @@ UTS_PWEB_252410103020/
 
 ---
 
-## Panduan Menjalankan Aplikasi Secara Lokal
+## 💻 Panduan Menjalankan Aplikasi Secara Lokal
 
 1. **Clone Repository**:
    ```bash
@@ -84,7 +84,7 @@ UTS_PWEB_252410103020/
 
 ---
 
-## Dokumentasi Tampilan Aplikasi
+## 📸 Dokumentasi Tampilan Aplikasi
 
 ### 1. Halaman Login
 ![Login](public/images/screenshots/halaman_login_ss.png)
@@ -108,8 +108,10 @@ UTS_PWEB_252410103020/
 
 ---
 
-## Demo Video YouTube
+## 🎥 Demo Video YouTube
 
-- **Link Video UTS** : [Tonton Video Demo di YouTube](To Be Added)
+- **Link Video UTS** : [To Be Added](To Be Added)
 
-## Thank You :]
+---
+
+## ◈ Thank You :]
