@@ -80,30 +80,30 @@ UTS_PWEB_252410103020/
    ```
 
 5. **Akses di Browser**:
-   Buka `http://127.0.0.1:8000` pada peramban web Anda.
+   Buka `http://127.0.0.1:8000` pada web anda.
 
 ---
 
 ## Dokumentasi Tampilan Aplikasi
 
 ### 1. Halaman Login
-![Halaman Login](<img width="1915" height="895" alt="image" src="https://github.com/user-attachments/assets/bf35ef0e-9ba8-4433-bbf8-29f7e4f90ce9" />
-)
+!(public/images/screenshots/halaman_login_ss.png)
+
 *Form login dengan validasi karakter huruf/angka dan pengiriman parameter GET.*
 
 ### 2. Halaman Dashboard
-![Halaman Dashboard](<img width="1912" height="892" alt="image" src="https://github.com/user-attachments/assets/fa583dfa-5d14-49a5-8acf-2b5d4bebca12" />
-)
+!(public/images/screenshots/halaman_dashboard_ss.png)
+
 *Tampilan dashboard menyambut sesi user aktif beserta ringkasan metrik event.*
 
 ### 3. Halaman Pengelolaan Event
-![Halaman Pengelolaan Event](<img width="1892" height="890" alt="image" src="https://github.com/user-attachments/assets/e68e2b54-9277-45af-a53d-b51b01c6c4c5" />
-)
+!(public/images/screenshots/halaman_pengelolaan_ss.png)
+
 *Tabel perulangan `@foreach` menampilkan data event, kuota, badge status, poster, dan foto pemateri.*
 
 ### 4. Halaman Profile Peserta
-![Halaman Profile](<img width="1917" height="892" alt="image" src="https://github.com/user-attachments/assets/c6043758-3a1b-445e-a16f-07453ba121bc" />
-)
+!(public/images/screenshots/halaman_profil_ss.png)
+
 *Kartu identitas peserta event dengan inisial avatar geometris dan data sesi aktif.*
 
 ---
