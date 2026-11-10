@@ -87,22 +87,22 @@ UTS_PWEB_252410103020/
 ## Dokumentasi Tampilan Aplikasi
 
 ### 1. Halaman Login
-!(public/images/screenshots/halaman_login_ss.png)
+![Login](public/images/screenshots/halaman_login_ss.png)
 
 *Form login dengan validasi karakter huruf/angka dan pengiriman parameter GET.*
 
 ### 2. Halaman Dashboard
-!(public/images/screenshots/halaman_dashboard_ss.png)
+![Dashboard](public/images/screenshots/halaman_dashboard_ss.png)
 
 *Tampilan dashboard menyambut sesi user aktif beserta ringkasan metrik event.*
 
 ### 3. Halaman Pengelolaan Event
-!(public/images/screenshots/halaman_pengelolaan_ss.png)
+![Pengelolaan]public/images/screenshots/halaman_pengelolaan_ss.png)
 
 *Tabel perulangan `@foreach` menampilkan data event, kuota, badge status, poster, dan foto pemateri.*
 
 ### 4. Halaman Profile Peserta
-!(public/images/screenshots/halaman_profil_ss.png)
+![Profile](public/images/screenshots/halaman_profil_ss.png)
 
 *Kartu identitas peserta event dengan inisial avatar geometris dan data sesi aktif.*
 
