@@ -110,7 +110,7 @@ UTS_PWEB_252410103020/
 
 ## 🎥 Demo Video YouTube
 
-- **Link Video UTS** : ![Link Video YouTube](https://youtu.be/KobSz4HtuXU)
+- **Link Video UTS** : [Link Video YouTube](https://youtu.be/KobSz4HtuXU)
 
 ---
 
