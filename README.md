@@ -36,7 +36,7 @@ UTS_PWEB_252410103020/
 │           └── PageController.php          # 1 controller pengendali seluruh halaman & data dummy
 ├── public/
 │   └── images/
-│       ├── acara/                          # poster kegiatan event
+│       ├── acara/                          # foto kegiatan event
 │       └── pembicara/                      # foto profil pemateri
 ├── resources/
 │   └── views/
